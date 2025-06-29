@@ -1,0 +1,103 @@
+/* Set main background to gray and apply background image */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Background image with transparency */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../images/gym2.jpeg') ;
+    background-size: cover;
+    opacity: 0.3; /* Adjust transparency */
+    z-index: -1;  /* Behind all content */
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Dots (navigation) */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Optional styling for header/footer/nav */
+header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin-right: 15px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.intro-box {
+    background-color: #38c212a5; /* Light gray */
+    padding: 5px;
+    margin: 5px auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    max-width: 1300px;
+    border-radius: 8px;
+    font-size: 25px;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.intro-box h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 28px;
+    color: #222;
+    text-align: left;
+}
+.header1 h1{
+    margin-left: 20px;
+    padding: 20px;
+}
