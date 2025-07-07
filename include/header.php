@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 ?>
 
 <header style="background-color: #222; color: #fff; padding: 20px 0;">
-    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; max-width: 98%; margin: 0 auto; padding: 0 20px;">
 
         <!-- Logo and Title -->
         <div style="display: flex; align-items: center;">

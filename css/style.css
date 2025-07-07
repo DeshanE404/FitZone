@@ -6,6 +6,11 @@ body {
     padding: 0;
     position: relative;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 /* Background image with transparency */
 body::before {
@@ -19,7 +24,8 @@ body::before {
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    width: 98%;
+  /*  max-width: 1000px;*/
     position: relative;
     margin: auto;
 }
@@ -57,6 +63,7 @@ body::before {
 
 /* Optional styling for header/footer/nav */
 header, footer {
+    width: 100%;
     background-color: #222;
     color: #fff;
     padding: 15px;
@@ -75,13 +82,13 @@ main {
     padding: 20px;
 }
 .intro-box {
+    width: 98%;
     background-color: #38c212a5; /* Light gray */
     padding: 5px;
     margin: 5px auto;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight: bold;
     font-style: italic;
-    max-width: 1300px;
     border-radius: 8px;
     font-size: 25px;
     color: #ffffff;
@@ -98,6 +105,7 @@ main {
     text-align: left;
 }
 .header1 h1{
+    width: 100%;
     margin-left: 20px;
     padding: 20px;
 }
